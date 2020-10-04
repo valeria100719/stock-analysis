@@ -1,5 +1,8 @@
 # stock-analysis
+
 Sub AllStocksAnalysisRefactored()
+
+
     Dim startTime As Single
     Dim endTime  As Single
 
@@ -54,6 +57,8 @@ Sub AllStocksAnalysisRefactored()
     ''2a) Create a for loop to initialize the tickerVolumes to zero.
     
     For i = 1 To 12
+    
+    
    tickerVolumes(i) = 0
         
         Cells(i, 9) = TickerIndex
@@ -109,7 +114,10 @@ Sub AllStocksAnalysisRefactored()
     Columns("B").AutoFit
   
   For i = 0 To 11
+  
+  
    Worksheets("All Stocks Analysis").Activate
+   
    
    Cells(4 + i, 1).Value = tickers(i)
    Cells(4 + i, 2).Value = tickerVolumes(i)
